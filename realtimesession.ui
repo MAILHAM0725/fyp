@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1048</width>
+    <height>829</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Real-Time EEG Session</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true">background-color: white;</string>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout" stretch="1,0,0,0">
+    <item>
+     <widget class="QLabel" name="label_title">
+      <property name="styleSheet">
+       <string notr="true">font-size: 26pt; font-weight: bold; color: black; margin-top: 20px;</string>
+      </property>
+      <property name="text">
+       <string>Real-Time Session</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="graphPlaceholder">
+      <property name="minimumSize">
+       <size>
+        <width>800</width>
+        <height>350</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: white; border: 2px solid #555; border-radius: 8px; margin: 10px;</string>
+      </property>
+      <property name="text">
+       <string>EEG Graph Will Appear Here</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayoutTopCards" stretch="1,1">
+      <item>
+       <widget class="QFrame" name="frame_attention">
+        <property name="styleSheet">
+         <string notr="true">background-color: #4339FF; border-radius: 15px; padding: 10px;</string>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayoutAttention">
+         <item>
+          <widget class="QLabel" name="label_attention_title">
+           <property name="styleSheet">
+            <string notr="true">color: white; font-size: 14pt; font-weight: bold;</string>
+           </property>
+           <property name="text">
+            <string>Attention</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_attention_value">
+           <property name="styleSheet">
+            <string notr="true">color: cyan; font-size: 20pt; font-weight: bold;</string>
+           </property>
+           <property name="text">
+            <string>High</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <widget class="QFrame" name="frame_emotion">
+        <property name="styleSheet">
+         <string notr="true">background-color: #4339FF; border-radius: 15px; padding: 10px;</string>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayoutEmotion">
+         <item>
+          <widget class="QLabel" name="label_emotion_title">
+           <property name="styleSheet">
+            <string notr="true">color: white; font-size: 14pt; font-weight: bold;</string>
+           </property>
+           <property name="text">
+            <string>Emotion</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_emotion_value">
+           <property name="styleSheet">
+            <string notr="true">color: cyan; font-size: 20pt; font-weight: bold;</string>
+           </property>
+           <property name="text">
+            <string>Happy</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <widget class="QPushButton" name="btn_end_session">
+      <property name="styleSheet">
+       <string notr="true">background-color: #FF3B30; color: white; font-size: 14pt; border-radius: 10px; padding: 10px 20px; margin-top: 20px;</string>
+      </property>
+      <property name="text">
+       <string>End Session</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
