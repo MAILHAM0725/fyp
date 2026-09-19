@@ -5,7 +5,7 @@ from pathlib import Path
 
 class DatabaseManager:
     def __init__(self):
-        # ✅ FIX: Store DB in Documents/TARKEEZ folder so it persists safely
+        # Store DB in Documents/TARKEEZ folder so it persists safely
         self.db_path = self.get_db_path()
         self.create_table()
 

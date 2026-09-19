@@ -1,8 +1,7 @@
 from psychopy import visual, core, event
-from PyQt5.QtWidgets import QApplication # ✅ Keep timer alive
+from PyQt5.QtWidgets import QApplication 
 import random
 
-# Modified: save_path is kept as an argument to prevent errors in main.py, but it is not used.
 def run_num_stroop_game(duration_sec, save_path=None):
     # =========================
     # PARAMETERS

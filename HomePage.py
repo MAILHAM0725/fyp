@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 
 # Form implementation generated for TARKEEZ Responsive Home Page
-# Created by: Gemini (Manual Refactor using Layouts)
 
 from PyQt5 import QtCore, QtGui, QtWidgets
 
